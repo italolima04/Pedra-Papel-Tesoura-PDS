@@ -1,3 +1,6 @@
+package br.com.pds.model;
+
+import br.com.pds.controller.*;
 
 public interface Jogo {
 	public int palpiteJogador(String palpite);

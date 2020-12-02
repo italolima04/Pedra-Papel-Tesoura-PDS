@@ -1,3 +1,8 @@
+package br.com.pds.view;
+
+import br.com.pds.model.*;
+import br.com.pds.controller.*;
+
 import java.util.Scanner;
 
 public class Interface {

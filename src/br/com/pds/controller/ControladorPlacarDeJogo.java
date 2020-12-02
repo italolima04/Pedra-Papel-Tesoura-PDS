@@ -1,3 +1,6 @@
+package br.com.pds.controller;
+
+import br.com.pds.model.*;
 
 public class ControladorPlacarDeJogo {
 	public void incrementaPlacarJogador(Jogador jogador) {

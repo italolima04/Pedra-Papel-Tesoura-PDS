@@ -1,3 +1,7 @@
+package br.com.pds.controller;
+
+import br.com.pds.model.*;
+
 import java.util.Random;
 
 public class PedraPapelTesoura implements Jogo{

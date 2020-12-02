@@ -1,13 +1,14 @@
+package br.com.pds.model;
 
-public class Computador {
+public class Jogador {
 	int qtdVitorias;
 	int qtdDerrotas;
 	
-	public Computador() {
+	public Jogador() {
 		super();
 	}
 	
-	public Computador(int qtdVitorias, int qtdDerrotas) {
+	public Jogador(int qtdVitorias, int qtdDerrotas) {
 		this.qtdVitorias = qtdVitorias;
 		this.qtdDerrotas = qtdDerrotas;
 	}
@@ -30,6 +31,7 @@ public class Computador {
 	
 	@Override
 	public String toString() {
-		return "Quantidade de Vitórias do Computador: " + this.getQtdVitorias();
+		return "Quantidade de Vitórias do Jogador: " + this.getQtdVitorias();
 	}
+	
 }
