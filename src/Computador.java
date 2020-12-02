@@ -1,13 +1,13 @@
 
-public class Jogador {
+public class Computador {
 	int qtdVitorias;
 	int qtdDerrotas;
 	
-	public Jogador() {
+	public Computador() {
 		super();
 	}
 	
-	public Jogador(int qtdVitorias, int qtdDerrotas) {
+	public Computador(int qtdVitorias, int qtdDerrotas) {
 		this.qtdVitorias = qtdVitorias;
 		this.qtdDerrotas = qtdDerrotas;
 	}
@@ -30,7 +30,6 @@ public class Jogador {
 	
 	@Override
 	public String toString() {
-		return "Quantidade de Vitórias do Jogador: " + this.getQtdVitorias();
+		return "Quantidade de Vitórias do Computador: " + this.getQtdVitorias();
 	}
-	
 }
