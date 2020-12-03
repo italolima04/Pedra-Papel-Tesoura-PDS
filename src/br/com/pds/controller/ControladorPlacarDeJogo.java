@@ -18,8 +18,4 @@ public class ControladorPlacarDeJogo {
 	public void decrementaPlacarComputador(Computador computador) {
 		computador.setQtdDerrotas((computador.getQtdDerrotas() + 1));
 	}
-	
-	public void placarAtualJogo(Jogador jogador, Computador computador) {
-		
-	}
 }
