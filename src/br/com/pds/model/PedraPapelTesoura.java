@@ -53,7 +53,7 @@ public class PedraPapelTesoura implements Jogo{
 		}
 	}
 	
-	public int rodada(Jogador jogador, Computador computador, ControladorPlacarDeJogo controlador, String palpite) {
+	public int rodada(Player jogador, Player computador, ControladorPlacarDeJogo controlador, String palpite) {
 		int palpiteJogador = palpiteJogador(palpite);
 		if(palpiteJogador == 3) {
 			return 3;
@@ -62,12 +62,12 @@ public class PedraPapelTesoura implements Jogo{
 			int palpiteComputador = palpiteComputador();
 			converteJogada(palpiteComputador, computador);
 			 if((palpiteJogador == 1 && palpiteComputador == 0)|| (palpiteJogador == 0 && palpiteComputador == 2) || (palpiteJogador == 2 && palpiteComputador == 1)) {
-				controlador.incrementaPlacarJogador(jogador);
-				controlador.decrementaPlacarComputador(computador);
+				controlador.incrementaVitorias(jogador);
+				controlador.incrementaDerrotas(computador);
 				return 1;
 			}else if((palpiteJogador == 0 && palpiteComputador == 1)|| (palpiteJogador == 2 && palpiteComputador == 0) || (palpiteJogador == 1 && palpiteComputador == 2) ) {
-				controlador.incrementaPlacarComputador(computador);
-				controlador.decrementaPlacarJogador(jogador);
+				controlador.incrementaVitorias(computador);
+				controlador.incrementaDerrotas(jogador);
 				return 2;
 			} else {
 				return 0;

@@ -16,16 +16,17 @@ public class Interface {
 		PedraPapelTesoura jogo = new PedraPapelTesoura();
 		Placar placar = new Placar();
 		ControladorPlacarDeJogo controlador = new ControladorPlacarDeJogo();
-		Jogador jogador = new Jogador();
-		Computador computador = new Computador();
+		Player jogador = new Jogador();
+		Player computador = new Computador();
 
 		System.out.println("Seja Bem-Vindo ao Célebre Jogo PPT: Pedra, Papel, Tesoura.");
 		while(operadorMenu) {
 			System.out.println("--------------------MENU--------------------");
-			System.out.println("#1--->Jogar uma Partida");
-			System.out.println("#2--->Verificar Retrospecto do Jogador");
-			System.out.println("#3--->Sobre");
-			System.out.println("#4--->Sair");
+			System.out.println("#1---> Jogar uma Partida");
+			System.out.println("#2---> Verificar Retrospecto do Jogador");
+			System.out.println("#3---> Verificar Retrospecto do Computador");
+			System.out.println("#4---> Sobre");
+			System.out.println("#5---> Sair");
 			System.out.println("----------------------------------------------------------------------------------------");
 			System.out.println("Digite uma das Opções Acima para Prosseguir: ");
 			opcaoMenuExterno = entrada.nextInt();
@@ -79,13 +80,17 @@ public class Interface {
 					System.out.println(jogador);
 					break;
 				case 3:
+					System.out.println("RETROSPECTIVA GERAL DO COMPUTADOR: ");
+					System.out.println(computador);
+					break;
+				case 4:
 					System.out.println("Este Sistema foi desenvolvido como Desafio da disciplina de Projeto Detalhado de Software 2020.2, na Universidade Federal do Ceará.");
 					System.out.println("----------------------------------------------------------------------------------------");
 					System.out.println("Desenvolvedores: ");
 					System.out.println("Ítalo Lima Dantas || Github: https://github.com/italolima04");
 					System.out.println("Marcos Gênesis da Silva || Github: https://github.com/marcosgenesis");
 					break;
-				case 4:
+				case 5:
 					operadorMenu = false;
 					System.out.println("Fechando Aplicação...");
 					System.exit(1);
